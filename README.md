@@ -1,6 +1,6 @@
 ## OVERVIEW
 
-* Proofpoint MSDefender application collects event data of MS Defender from Azure EventHub and find Ip, Domain and File Hash related threats from event data by comparing it with ET data from Proofpoint. And, post the alert back to the MS Defender.
+* Proofpoint MSDefender application collects event data of MS Defender from Azure EventHub and filter Ip, Domain and File Hash related threats from event data by comparing it with ET data from Proofpoint. And, post the alert back to the MS Defender.
 * Version - 1.0.0
 * Prerequisites - 
 
@@ -36,12 +36,11 @@
 
 ## INSTALLATION
 
-1. First, unzip the ProofpointMSDefender file.
-2. In terminal, go the path where docker-compose.yml file is present.
-3. Then run the following command in terminal, to start the docker and run the python app : ```docker compose run --name proofpoint proofpoint```.
-4. To reconfigure any input credentials run command : ```docker exec -it proofpoint setsid -w python reconfigure.py```.
-5. To restart the integration run this command : ```docker exec -it proofpoint setsid python restart.py```.
-6. To stop the docker container run this command : ```docker stop proofpoint```.
+1. In terminal, go the path where docker-compose.yml file is present.
+2. Then run the following command in terminal, to start the docker and run the python app : ```docker compose run --name proofpoint proofpoint```.
+3. To reconfigure any input credentials run command : ```docker exec -it proofpoint setsid -w python reconfigure.py```.
+4. To restart the integration run this command : ```docker exec -it proofpoint setsid python restart.py```.
+5. To stop the docker container run this command : ```docker stop proofpoint```.
 
 ## Third party python library used
 
